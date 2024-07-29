@@ -46,10 +46,10 @@ body {
 }
 
 .button:hover {
-    background-color:green;
+    background-color:#45a049;
 }
 .toggle-description:hover{
-    background-color:green;
+    background-color:#45a049;
 }
 
 .toggle-description {
