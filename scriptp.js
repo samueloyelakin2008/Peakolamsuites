@@ -43,7 +43,7 @@ emailjs.send("service_497091m", "template_b4fkfvx", templateParams)
         gifImage.src = "https://www.icegif.com/wp-content/uploads/2023/08/icegif-727.gif"; // Success GIF
         document.getElementById("gifContainer").style.display = "block"; // Show GIF container
 
-        // Hide GIF after 5 seconds (5000 milliseconds)
+        // Hide GIF after 5 seconds (10000 milliseconds)
         hideGifAfterDelay(10000);
         console.log('SUCCESS!', response.status, response.text);
     }, function(error) {
@@ -56,8 +56,8 @@ emailjs.send("service_497091m", "template_b4fkfvx", templateParams)
         gifImage.src = "https://i.pinimg.com/originals/6e/f9/f2/6ef9f2fd6425c578274e72ce1f44a778.gif"; // Error GIF
         document.getElementById("gifContainer").style.display = "block"; // Show GIF container
 
-        // Hide GIF after 5 seconds (5000 milliseconds)
-        hideGifAfterDelay(5000);
+        // Hide GIF after 5 seconds (10000 milliseconds)
+        hideGifAfterDelay(10000);
         console.log('FAILED...', error);
     });
 
