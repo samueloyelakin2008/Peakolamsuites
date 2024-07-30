@@ -137,58 +137,65 @@
 
 
         <!-- Booking Start -->
-        <div class="container-xxl py-5" align="center">
-            <div class="container">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="section-title text-center text-primary text-uppercase">Room Booking</h6>
-                    <h1 class="mb-5">Book A <span class="text-primary text-uppercase">Luxury Room</span></h1>
+        
+        <div class="container-xxl py-5" align="">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="section-title text-center text-primary text-uppercase">Room Booking</h6>
+            <h1 class="mb-5">Book A <span class="text-primary text-uppercase">Luxury Room</span></h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="wow fadeInUp" data-wow-delay="0.2s">
+                    <link rel="stylesheet" href="stylesp.css">
+                    <form id="bookingForm">
+                        <label for="guestName">Guest Name:</label>
+                        <input type="text" id="guestName" required name="name">
+
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" required name="email">
+
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" required name="phone">
+
+                        <label for="numGuests">Number of Guests:</label>
+                        <input type="number" id="numGuests" min="1" required>
+
+                        <label for="suite">Select Suite:</label>
+                        <select id="suite" required>
+                            <option value="" disabled selected>Standard Suite ₦20000</option>
+                            <option value="Standard Suite">Standard Suite</option>
+                            <option value="Royal Suite">Royal Suite</option>
+                            <option value="Executive Suite">Executive Suite</option>
+                            <option value="Mini Suite">Mini Suite</option>
+                            <option value="Double room">Double room</option>
+                            <option value="Double Deluxe Suite">Double Deluxe Suite</option>
+                            <option value="Business Suite">Business Suite e.g Hall Events</option>
+                        </select>
+
+                        <label for="checkin">Check-in Date:</label>
+                        <input type="date" id="checkin" required>
+
+                        <label for="checkout">Check-out Date:</label>
+                        <input type="date" id="checkout" required>
+
+                        <button class="a" type="submit">Book Now</button>
+                    </form>
+                    <div id="loader" class="loader" style="display: none;"></div>
+                    <div id="responseMessage"></div>
                 </div>
-                    <div class="col-lg-6">
-                        <div class="wow fadeInUp" data-wow-delay="0.2s">
-                         <link rel="stylesheet" href="stylesp.css">
-        <form id="bookingForm">
-            <label for="guestName">Guest Name:</label>
-            <input type="text" id="guestName" required name="name">
-
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" required name="email">
-
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" required name="tel">
-
-            <label for="numGuests">Number of Guests:</label>
-            <input type="number" id="numGuests" min="1" required>
-
-            <label for="suite">Select Suite:</label>
-            <select id="suite" required>
-                <option value="" disabled selected>Standard Suite #20000</option>
-                <option value="Standard Suite">Standard Suite</option>
-                <option value="Royal Suite">Royal Suite</option>
-                <option value="Executive Suite">Executive Suite</option>
-                <option value="Mini Suite">Mini Suite</option>
-                <option value="Double room">Double room </option>
-                <option value="Double Deluxe Suite">Double Deluxe Suite</option>
-                <option value="Business Suite">Business Suite e.g Hall Events</option>
-            </select>
-
-            <label for="checkin">Check-in Date:</label>
-            <input type="date" id="checkin" required>
-
-            <label for="checkout">Check-out Date:</label>
-            <input type="date" id="checkout" required>
-
-            <button class="a" type="submit">Book Now</button>
-        </form>
-                      <div id="loader" class="loader" style="display: none;">Loading...</div>
-                         <div id="responseMessage"></div>
-
-                           <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-                           <script src="scriptp.js"></script>
-                        </div>
-                    </div>
+            </div>
+            <div class="col-lg-6 d-flex justify-content-center align-items-center" style="height: 100%;">
+                <div class="gif-container" id="gifContainer" style="display: none; text-align: center;">
+                    <img id="gifImage" src="" alt="Status GIF" style="max-width: 100%; height: auto;">
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="scriptp.js"></script>
         <!-- Booking End -->
 
 
