@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +8,6 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-    <meta name="monetag" content="dee4b2d929707676df8c06dd74381a6f">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7247573651283985"
      crossorigin="anonymous"></script>
      <!-- Google tag (gtag.js) -->
@@ -19,6 +19,7 @@
 
   gtag('config', 'G-754HN8PMLS');
 </script>
+    
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
         <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlCjLmemX-pyX0yGhOyqikDqSvA5MAzVWN7g&s">
@@ -101,7 +102,7 @@
                                 <a href="about.html" class="nav-item nav-link">About</a>
                                 <a href="service.html" class="nav-item nav-link">Services</a>
                                 <a href="room.html" class="nav-item nav-link">Rooms</a>
-                                <a href="" class="nav-item nav-link">Restaurant</a>
+                                <a href="restaurant.html" class="nav-item nav-link">Restaurant</a>
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                                     <div class="dropdown-menu rounded-0 m-0">
@@ -131,7 +132,7 @@
                                 <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Luxury Living</h6>
                                 <h1 class="display-3 text-white mb-4 animated slideInDown" id="animated-text">WELCOME TO PEAKOLAM SUITES HOTEL</h1>
                                 <a href="room.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Our Rooms</a>
-                                <a href="https://wa.me/2348037204293" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</a>
+                                <a href="#b" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</a>
                             </div>
                         </div>
                     </div>
@@ -142,7 +143,7 @@
                                 <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Luxury Living</h6>
                                 <h1 class="display-3 text-white mb-4 animated slideInDown">Discover A Brand Of Our Luxurious Hotel</h1>
                                 <a href="room.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Our Rooms</a>
-                                <a href="https://wa.me/2348037204293" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</a>
+                                <a href="#b" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</a>
                             </div>
                         </div>
                     </div>
@@ -162,16 +163,23 @@
         <!-- Carousel End -->
 
 
-        <!-- Booking Start -->
-        
-        <div class="container-xxl py-5" align="">
+        <!-- Booking End -->
+<div class="container-xxl py-5" align="center" id="a">
     <div class="container">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
             <h6 class="section-title text-center text-primary text-uppercase">Room Booking</h6>
             <h1 class="mb-5">Book A <span class="text-primary text-uppercase">Luxury Room</span></h1>
         </div>
         <div class="row">
+          <div align="left">
+            <h6 class="mb-5">Account number:<span class="text-primary text-uppercase">7045247679</span></h6>
+            <h6 class="mb-5">Account name:<span class="text-primary text-uppercase">Peakolam Suites</span></h6>
+            <h6 class="mb-5">Bank:<span class="text-primary text-uppercase">Monnie Point</span></h6>
+            <h6 class="mb-5">NOTE:<span class="text-primary text-uppercase">Upload reciept after payment for verification purposes</span></h6>
+            <button style="background-color:#FEA116; border-color:#FEA116; border-radius:10px; font-weight:bold; padding:5px;" class="mb-5"><a href="https://wa.me/2348037204293" style="color:white;">VERIFY NOW</a></button>
+          </div>
             <div class="col-lg-6">
+                 <h4 class="mb-5">OR <span class="text-primary text-uppercase">PRE-BOOK YOUR STAY AT LUXURY SUITES AND EVENT HALL</span></h4>
                 <div class="wow fadeInUp" data-wow-delay="0.2s">
                     <link rel="stylesheet" href="stylesp.css">
                     <form id="bookingForm">
@@ -190,25 +198,31 @@
                         <label for="suite">Select Suite:</label>
                         <select id="suite" required>
                             <option value="" disabled selected>Standard Suite ₦20000</option>
-                            <option value="Standard Suite">Standard Suite</option>
-                            <option value="Royal Suite">Royal Suite</option>
-                            <option value="Executive Suite">Executive Suite</option>
-                            <option value="Mini Suite">Mini Suite</option>
+                            <option value="Standard Suites">Standard Suite</option>
+                            <option value="Royal Suites">Royal Suite</option>
+                            <option value="Executive Suites">Executive Suite</option>
+                            <option value="Mini Suites">Mini Suite</option>
                             <option value="Double room">Double room</option>
-                            <option value="Double Deluxe Suite">Double Deluxe Suite</option>
-                            <option value="Business Suite">Business Suite e.g Hall Events</option>
+                            <option value="Double Deluxes Suite">Double Deluxe Suite</option>
+                            <option value="Business Suites without A.C">Business Suite e.g Hall Events without Air conditioner ₦140000</option>
+                            <option value="Business suites with A.C">Business suite e.g Hall events with Air condtioner ₦280000</option>
                         </select>
 
                         <label for="checkin">Check-in Date:</label>
                         <input type="date" id="checkin" required>
 
+                        <label for="checkinTime">Check-in Time:</label>
+                        <input type="time" id="checkinTime" required>
+
                         <label for="checkout">Check-out Date:</label>
                         <input type="date" id="checkout" required>
+                         
+                        <label for="message">Special Request</label>
+                        <textarea  placeholder="Special Request (optional)" id="message" style="height: 100px"></textarea>
 
                         <button class="a" type="submit">Book Now</button>
                     </form>
                     <div id="loader" class="loader" style="display: none;"></div>
-                    <div id="responseMessage"></div>
                 </div>
             </div>
             <div class="col-lg-6 d-flex justify-content-center align-items-center" style="height: 100%;">
@@ -220,13 +234,21 @@
     </div>
 </div>
 
+<!-- Popup message container -->
+<div id="popupContainer" class="popup-container" style="display: none;">
+    <div class="popup-content">
+        <span class="close-button" id="closeButton">&times;</span>
+        <div id="popupMessage"></div>
+        <div id="popupGif" class="popup-gif">
+            <img id="popupGifImage" src="" alt="Status GIF" style="max-width: 100%; height: auto;">
+        </div>
+    </div>
+</div>
+
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script src="scriptp.js"></script>
-        <!-- Booking End -->
 
 
-
-        
         <!-- About Start -->
         <div class="container-xxl py-5">
             <div class="container">
@@ -289,7 +311,7 @@
 
 
         <!-- Room Start -->
-        <div class="container-xxl py-5">
+        <div class="container-xxl py-5" id="b">
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                     <h6 class="section-title text-center text-primary text-uppercase">Our Rooms</h6>
@@ -321,7 +343,7 @@
                                 <p class="text-body mb-3"></p>
                                 <div class="d-flex justify-content-between">
                                     <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
-                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="https://wa.me/2348037204293">Book Now</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="#a">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -351,7 +373,7 @@
                                 <p class="text-body mb-3"></p>
                                 <div class="d-flex justify-content-between">
                                     <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
-                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="https://wa.me/2348037204293">Book Now</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="#a">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -381,7 +403,7 @@
                                 <p class="text-body mb-3"></p>
                                 <div class="d-flex justify-content-between">
                                     <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
-                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="https://wa.me/2348037204293">Book Now</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="#a">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -411,7 +433,7 @@
                                 <p class="text-body mb-3"></p>
                                 <div class="d-flex justify-content-between">
                                     <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
-                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="https://wa.me/2348037204293">Book Now</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="#a">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -441,7 +463,7 @@
                                 <p class="text-body mb-3"></p>
                                 <div class="d-flex justify-content-between">
                                     <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
-                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="https://wa.me/2348037204293">Book Now</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="#a">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -471,7 +493,7 @@
                                 <p class="text-body mb-3"></p>
                                 <div class="d-flex justify-content-between">
                                     <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
-                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="https://wa.me/2348037204293">Book Now</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="#a">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -508,7 +530,7 @@
                         <h1 class="text-white mb-4">Discover A Brand Luxurious Hotel</h1>
                         <p class="text-white mb-4">PEAKOLAM SUITES WAS BUILT TO PROVIDE ACCOMODATION IN A SERENE ENVIRONMENT TO LODGERS ALL OVER THE WORLD</p>
                         <a href="room.html" class="btn btn-primary py-md-3 px-md-5 me-3">Our Rooms</a>
-                        <a href="https://wa.me/2348037204293" class="btn btn-light py-md-3 px-md-5">Book A Room</a>
+                        <a href="#b" class="btn btn-light py-md-3 px-md-5">Book A Room</a>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -551,7 +573,7 @@
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <a class="service-item rounded" href="">
+                        <a class="service-item rounded" href="room.html">
                             <div class="service-icon bg-transparent border rounded p-1">
                                 <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
                                     <i class="fa fa-hotel fa-2x text-primary"></i>
@@ -562,7 +584,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                        <a class="service-item rounded" href="">
+                        <a class="service-item rounded" href="restaurant.html">
                             <div class="service-icon bg-transparent border rounded p-1">
                                 <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
                                     <i class="fa fa-utensils fa-2x text-primary"></i>
@@ -637,7 +659,7 @@
                         </div>
                     </div>
                     <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
-                        <p>“Me and my wife had a delightful weekend get away here, the staff were so friendly and attentive. Highly Recommended”
+                        <p style="font-size:15px;">“Me and my wife had a delightful weekend get away here, the staff were so friendly and attentive. Highly Recommended”
 </p>
                         <div class="d-flex align-items-center">
                             <img class="img-fluid flex-shrink-0 rounded" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhkeXo88SukOvYWTP5LBgDwlcovbbLfgr51A&s" style="width: 45px; height: 45px;">
@@ -684,9 +706,11 @@
 
 </p>
                 </div>
-                <a href="https://funaab.edu.ng/section/funaab-zoo-park/" target="_blank" class="button">Visit Zoo</a>
-	        <a href="https://maps.app.goo.gl/5YPymaAU8cEqKmRaA" target="_blank" class="button">Locate Zoo</a>
-
+               
+                  <a href="https://funaab.edu.ng/section/funaab-zoo-park/" target="_blank" class="button" >Visit Zoo</a>
+                  <a href="https://maps.app.goo.gl/5YPymaAU8cEqKmRaA" target="_blank" class="button">Locate Zoo</a>
+                
+               
             </div>
         </div>
 
@@ -730,6 +754,7 @@ Check other Southwest states Capital cities  with Rail Stations, there is usuall
 <center><img src="https://scontent.flos1-2.fna.fbcdn.net/v/t39.30808-6/232275253_1189530144880292_945144656754702617_n.jpg?stp=dst-jpg_s640x640&_nc_cat=100&ccb=1-7&_nc_sid=3a1ebe&_nc_ohc=6qrA84Q65lsQ7kNvgGhEyC-&_nc_zt=23&_nc_ht=scontent.flos1-2.fna&gid=AGgnOaFwNXKajCJutKHVWaM&oh=00_AYCwQ0gvOQdshQ47HhJAPuRnK6VXt8wmDZ8ClTm1YcmNXQ&oe=66AD8F42"></center>
                 </div>
                 <a href="https://www.tripadvisor.com/Attraction_Review-g1760497-d23961668-Reviews-Professor_Wole_Soyinka_Train_Station-Abeokuta_Ogun_State.html" class="button">Learn More</a>
+                <a href="" class="button">Location</a>
             </div>
         </div>
         <button class="carousel-button prev" onclick="changeSlide(-1)">&#10094;</button>
@@ -820,7 +845,7 @@ Check other Southwest states Capital cities  with Rail Stations, there is usuall
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                             &copy; <a class="border-bottom" href="#">PeakOlam Suites Hotel</a>, All Right Reserved. 
-							
+                            
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
