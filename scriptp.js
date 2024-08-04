@@ -62,7 +62,7 @@ document.getElementById("bookingForm").addEventListener("submit", function(event
 
 // Function to send booking info to WhatsApp
 function sendToWhatsApp(params) {
-    const message = `Booking Details:\n` +
+    const message = `Booking Details For Peakolam Suites Hotel:\n` +
                     `Name: ${params.name}\n` +
                     `Email: ${params.email}\n` +
                     `Phone: ${params.phone}\n` +
