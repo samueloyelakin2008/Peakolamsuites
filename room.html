@@ -139,24 +139,18 @@
 
         <!-- Booking Start -->
         
-<div class="container-xxl py-5" align="center" id="a">
+        <div class="container-xxl py-5" align="center" id="a">
     <div class="container">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
             <h6 class="section-title text-center text-primary text-uppercase">Room Booking</h6>
             <h1 class="mb-5">Book A <span class="text-primary text-uppercase">Luxury Room</span></h1>
         </div>
         <div class="row">
-          <div align="left">
-            <h6 class="mb-5">Account number:<span class="text-primary text-uppercase">7045247679</span></h6>
-            <h6 class="mb-5">Account name:<span class="text-primary text-uppercase">Peakolam Suites</span></h6>
-            <h6 class="mb-5">Bank:<span class="text-primary text-uppercase">Monnie Point</span></h6>
-            <h6 class="mb-5">NOTE:<span class="text-primary text-uppercase">Upload reciept after payment for verification purposes</span></h6>
-            <button style="background-color:#FEA116; border-color:#FEA116; border-radius:10px; font-weight:bold; padding:5px;" class="mb-5"><a href="https://wa.me/2348037204293" style="color:white;">VERIFY NOW</a></button>
-          </div>
             <div class="col-lg-6">
+                <h4 class="mb-5">OR <span class="text-primary text-uppercase">PRE-BOOK YOUR STAY AT OUR LUXURIOUS SUITES AND EVENT HALL</span></h4>
                 <div class="wow fadeInUp" data-wow-delay="0.2s">
-                    <link rel="stylesheet" href="stylesp.css">
                     <form id="bookingForm">
+                        <link rel="stylesheet" type="text/css" href="stylesp.css">
                         <label for="guestName">Guest Name:</label>
                         <input type="text" id="guestName" required name="name">
 
@@ -177,9 +171,9 @@
                             <option value="Executive Suites">Executive Suite</option>
                             <option value="Mini Suites">Mini Suite</option>
                             <option value="Double room">Double room</option>
-                            <option value="Double Deluxes Suite">Double Deluxe Suite</option>
-                            <option value="Business Suites without A.c">Business Suite e.g Hall Events without Air conditioner ₦140000</option>
-                            <option value="Business suites with A.C">Business suite e.g Hall events with Air condtioner ₦280000</option>
+                            <option value="Double Deluxe Suite">Double Deluxe Suite</option>
+                            <option value="Business Suites: hall without A.C">Business Suite e.g Hall Events without Air Conditioner ₦300,000 (max 4hrs) extra (₦60,000) per hour</option>
+                            <option value="Business Suites: hall with A.C">Business Suite e.g Hall Events with Air Conditioner ₦550,000 (max 4hrs) extra (₦80,000) per hour</option>
                         </select>
 
                         <label for="checkin">Check-in Date:</label>
@@ -192,17 +186,76 @@
                         <input type="date" id="checkout" required>
 
                         <label for="message">Special Request</label>
-                        <textarea  placeholder="Special Request (optional)" id="message" style="height: 100px"></textarea>
+                        <textarea placeholder="Special Request (optional)" id="message" style="height: 100px"></textarea>
 
                         <button class="a" type="submit">Book Now</button>
                     </form>
                     <div id="loader" class="loader" style="display: none;"></div>
                 </div>
             </div>
-            <div class="col-lg-6 d-flex justify-content-center align-items-center" style="height: 100%;">
-                <div class="gif-container" id="gifContainer" style="display: none; text-align: center;">
-                    <img id="gifImage" src="" alt="Status GIF" style="max-width: 100%; height: auto;">
-                </div>
+
+            <div class="col-lg-6 flex-item" align="center" style="font-size:18px;">
+                <h2 style="color:#FEA116;">TARIFFS</h2>
+                <p>Choose from a variety of luxurious rooms designed to meet your needs.</p>
+
+                <h2>Types of Accommodation and Tariffs</h2>
+
+                <table style="width:100%; border-collapse: collapse;">
+                    <thead>
+                        <tr style="background-color: #FEA116; color: white;">
+                            <th style="padding: 10px; text-align: left;">Room Type</th>
+                            <th style="padding: 10px; text-align: left;">Price (₦)</th>
+                            <th style="padding: 10px; text-align: left;">Available Rooms</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding: 10px;">Standard Room</td>
+                            <td style="padding: 10px;">20,000</td>
+                            <td style="padding: 10px;">7</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">Double Room</td>
+                            <td style="padding: 10px;">24,000</td>
+                            <td style="padding: 10px;">16</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">Mini Suite</td>
+                            <td style="padding: 10px;">30,000</td>
+                            <td style="padding: 10px;">5</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">Royal Suite</td>
+                            <td style="padding: 10px;">40,000</td>
+                            <td style="padding: 10px;">5</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3><strong>Total Number of Rooms:</strong> 33</h3>
+
+                <p><strong>Additional Amenities:</strong></p>
+                <p>Our restaurant accommodates up to 30 guests at a time, and we also offer an event hall with a capacity of 150-250 persons.</p>
+
+                <h3>Event Hall Pricing</h3>
+                                        
+             <h4><strong><u>With Air Conditioning</u></strong></h4>
+                <ul>
+                 <p>Medium Hall: ₦150,000 (max 4 hrs)</p>
+                 <p>Extra Hours: ₦40,000 per hour</p>
+                 <p>Conference Hall: ₦550,000 (max 4 hrs)</p>
+                 <p>Extra Hours: ₦80,000 per hour</p>
+             </ul>
+                       
+             <h4><strong><u>Without Air Conditioning</u></strong></h4>
+               <ul>
+                <p>Medium Hall: ₦100,000 (max 4 hrs)</p>
+               <p>Extra Hours: ₦30,000 per hour</p>
+                <p>Conference Hall: ₦300,000 (max 4 hrs)</p>
+                <p>Extra Hours: ₦60,000 per hour</p>
+               </ul>
+
+                <p><strong>Note:</strong> Guest checkout time is 12:00 PM noon.</p>
             </div>
         </div>
     </div>
