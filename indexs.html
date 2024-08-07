@@ -174,11 +174,56 @@
             <h6 class="mb-5">Account name:<span class="text-primary text-uppercase">OKUNEYE MOJOYIN YINKA</span></h6>
             <h6 class="mb-5">Bank:<span class="text-primary text-uppercase">GURANTEE TRUST BANK GTB</span></h6> 
             <h6 class="mb-5">NOTE:<span class="text-primary text-uppercase">Upload reciept after payment for verification purposes</span></h6>
-            <button style="background-color:#FEA116; border-color:#FEA116; border-radius:10px; font-weight:bold; padding:5px; color:white; padding:10px;" class="toggle-description" onclick="toggleDropdown(this)">VERIFY NOW</button>
-                <div class="dropdown-content" style="width:100px;">
-                    <p><a href="https://wa.me/2348037204293">(1)Through Whatsapp</a></p>
-                    <p><a href="mailto:yinkaokuneye@gmail.com">(2)Through Email</a></p>
-                </div>
+            <button 
+    style="background-color: #FEA116; 
+            border: none; 
+            border-radius: 10px; 
+            font-weight: bold; 
+            padding: 10px 15px; 
+            color: white; 
+            cursor: pointer;" 
+    class="toggle-description" 
+    onclick="toggleDropdown(this)">
+    VERIFY NOW
+</button>
+
+<div class="dropdown-content" style="width: 200px; display: none; border: 1px solid #FEA116; border-radius: 10px; background-color: white; padding: 10px;">
+    <button 
+        style="background-color: #FEA116; 
+                border: none; 
+                border-radius: 5px; 
+                font-weight: bold; 
+                padding: 8px; 
+                color: white; 
+                cursor: pointer; 
+                width: 100%; 
+                margin-bottom: 5px;" 
+        onclick="window.location.href='https://wa.me/2348037204293'">
+        (1) Through WhatsApp
+    </button>
+    <span style="font-size: 12px; color: gray; margin-bottom: 10px;">Get immediate assistance by messaging us directly on WhatsApp.</span>
+    
+    <button 
+        style="background-color: #FEA116; 
+                border: none; 
+                border-radius: 5px; 
+                font-weight: bold; 
+                padding: 8px; 
+                color: white; 
+                cursor: pointer; 
+                width: 100%;" 
+        onclick="window.location.href='mailto:yinkamojoyin@gmail.com'">
+        (2) Through Email
+    </button>
+    <span style="font-size: 12px; color: gray;">Contact us via email for detailed inquiries or support.</span>
+</div>
+
+<script>
+function toggleDropdown(button) {
+    var dropdown = button.nextElementSibling;
+    dropdown.style.display = dropdown.style.display === 'none' || dropdown.style.display === '' ? 'block' : 'none';
+}
+</script>
           </div>
             <div class="col-lg-6">
                 <h4 class="mb-5">OR <span class="text-primary text-uppercase">PRE-BOOK YOUR STAY AT OUR LUXURIOUS SUITES AND EVENT HALL</span></h4>
@@ -233,63 +278,87 @@
                 <p>Choose from a variety of luxurious rooms designed to meet your needs.</p>
 
                 <h2>Types of Accommodation and Tariffs</h2>
+                <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #FEA116;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+<h2>Room Types and Pricing</h2>
+<table>
+    <tr>
+        <th>Room Type</th>
+        <th>Price (₦)</th>
+        <th>Available Rooms</th>
+    </tr>
+    <tr>
+        <td>Standard Room</td>
+        <td>20,000</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>Double Room</td>
+        <td>24,000</td>
+        <td>16</td>
+    </tr>
+    <tr>
+        <td>Mini Suite</td>
+        <td>30,000</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td>Royal Suite</td>
+        <td>40,000</td>
+        <td>5</td>
+    </tr>
+</table>
 
-                <table style="width:100%; border-collapse: collapse;">
-                    <thead>
-                        <tr style="background-color: #FEA116; color: white;">
-                            <th style="padding: 10px; text-align: left;">Room Type</th>
-                            <th style="padding: 10px; text-align: left;">Price (₦)</th>
-                            <th style="padding: 10px; text-align: left;">Available Rooms</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="padding: 10px;">Standard Room</td>
-                            <td style="padding: 10px;">20,000</td>
-                            <td style="padding: 10px;">7</td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 10px;">Double Room</td>
-                            <td style="padding: 10px;">24,000</td>
-                            <td style="padding: 10px;">16</td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 10px;">Mini Suite</td>
-                            <td style="padding: 10px;">30,000</td>
-                            <td style="padding: 10px;">5</td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 10px;">Royal Suite</td>
-                            <td style="padding: 10px;">40,000</td>
-                            <td style="padding: 10px;">5</td>
-                        </tr>
-                    </tbody>
-                </table>
+<h2>Additional Amenities</h2>
+<p>Our restaurant accommodates up to 30 guests at a time, and we also offer an event hall with a capacity of 150-250 persons.</p>
 
-                <h3><strong>Total Number of Rooms:</strong> 33</h3>
+<h3>Event Hall Pricing</h3>
+<table>
+    <tr>
+        <th>Hall Type</th>
+        <th>Price (₦)</th>
+        <th>Max Duration</th>
+        <th>Extra Hours (₦)</th>
+    </tr>
+    <tr>
+        <td>Medium Hall</td>
+        <td>150,000</td>
+        <td>4 hrs</td>
+        <td>40,000</td>
+    </tr>
+    <tr>
+        <td>Conference Hall</td>
+        <td>550,000</td>
+        <td>4 hrs</td>
+        <td>80,000</td>
+    </tr>
+    <tr>
+        <td>Medium Hall</td>
+        <td>100,000</td>
+        <td>4 hrs</td>
+        <td>30,000</td>
+    </tr>
+    <tr>
+        <td>Conference Hall</td>
+        <td>300,000</td>
+        <td>4 hrs</td>
+        <td>60,000</td>
+    </tr>
+</table>
 
-                <p><strong>Additional Amenities:</strong></p>
-                <p>Our restaurant accommodates up to 30 guests at a time, and we also offer an event hall with a capacity of 150-250 persons.</p>
-
-                <h3>Event Hall Pricing</h3>
-                                        
-             <h4><strong><u>With Air Conditioning</u></strong></h4>
-                <ul>
-                 <p>Medium Hall: ₦150,000 (max 4 hrs)</p>
-                 <p>Extra Hours: ₦40,000 per hour</p>
-                 <p>Conference Hall: ₦550,000 (max 4 hrs)</p>
-                 <p>Extra Hours: ₦80,000 per hour</p>
-             </ul>
-                       
-             <h4><strong><u>Without Air Conditioning</u></strong></h4>
-               <ul>
-                <p>Medium Hall: ₦100,000 (max 4 hrs)</p>
-               <p>Extra Hours: ₦30,000 per hour</p>
-                <p>Conference Hall: ₦300,000 (max 4 hrs)</p>
-                <p>Extra Hours: ₦60,000 per hour</p>
-               </ul>
-
-                <p><strong>Note:</strong> Guest checkout time is 12:00 PM noon.</p>
+<p><strong>Note:</strong> Guest checkout time is 12:00 PM noon.</p>
             </div>
         </div>
     </div>
