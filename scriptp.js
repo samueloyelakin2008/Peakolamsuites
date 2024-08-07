@@ -72,7 +72,7 @@ function sendToWhatsApp(params) {
                     `Check-out: ${params.check_out}\n` +
                     `Message: ${params.message}`;
     
-    const whatsappNumber = "+2347045247679";
+    const whatsappNumber = "+2348037204293";
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
     // Open WhatsApp chat
