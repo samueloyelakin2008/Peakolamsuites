@@ -138,7 +138,7 @@
 
 
         <!-- Booking Start -->
-	    
+        
         <div class="container-xxl py-5" align="center" id="a">
     <div class="container">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
@@ -154,105 +154,65 @@
              <h6 class="mb-5">Account number:<span class="text-primary text-uppercase">0050913166</span></h6>
             <h6 class="mb-5">Account name:<span class="text-primary text-uppercase">OKUNEYE MOJOYIN YINKA</span></h6>
             <h6 class="mb-5">Bank:<span class="text-primary text-uppercase">GURANTEE TRUST BANK GTB</span></h6> 
-            <h6 class="mb-5">NOTE:<span class="text-primary text-uppercase">Upload reciept after payment for verification purposes</span></h6>
-            <button 
-    style="background-color: #FEA116; 
-            border: none; 
-            border-radius: 10px; 
-            font-weight: bold; 
-            padding: 10px 15px; 
-            color: white; 
-            cursor: pointer;" 
-    class="toggle-description" 
-    onclick="toggleDropdown(this)">
-    VERIFY NOW
-</button>
-
-<div class="dropdown-content" style="width: 200px; display: none; border: 1px solid #FEA116; border-radius: 10px; background-color: white; padding: 10px;">
-    <button 
-        style="background-color: #FEA116; 
-                border: none; 
-                border-radius: 5px; 
-                font-weight: bold; 
-                padding: 8px; 
-                color: white; 
-                cursor: pointer; 
-                width: 100%; 
-                margin-bottom: 5px;" 
-        onclick="window.location.href='https://wa.me/2348037204293'">
-         Through WhatsApp
-    </button>
-    <span style="font-size: 12px; color: gray; margin-bottom: 10px;">Get immediate assistance by messaging us directly on WhatsApp.</span>
-    
-    <button 
-        style="background-color: #FEA116; 
-                border: none; 
-                border-radius: 5px; 
-                font-weight: bold; 
-                padding: 8px; 
-                color: white; 
-                cursor: pointer; 
-                width: 100%;" 
-        onclick="window.location.href='mailto:yinkamojoyin@gmail.com'">
-        Through Email
-    </button>
-    <span style="font-size: 12px; color: gray;">Contact us via email for detailed inquiries or support.</span>
-</div>
-
-<script>
-function toggleDropdown(button) {
-    var dropdown = button.nextElementSibling;
-    dropdown.style.display = dropdown.style.display === 'none' || dropdown.style.display === '' ? 'block' : 'none';
-}
-</script>
+         
           </div>
             <div class="col-lg-6">
-                <h4 class="mb-5">OR <span class="text-primary text-uppercase">PRE-BOOK YOUR STAY AT OUR LUXURIOUS SUITES AND EVENT HALL</span></h4>
+                <h4 class="mb-5"><span class="text-primary text-uppercase">BOOK YOUR STAY AT OUR LUXURIOUS SUITES AND EVENT HALL</span></h4>
                 <div class="wow fadeInUp" data-wow-delay="0.2s">
-                    <form id="bookingForm">
-                        <link rel="stylesheet" type="text/css" href="stylesp.css">
-                        <label for="guestName">Guest Name:</label>
-                        <input type="text" id="guestName" required name="name">
+                  <form id="bookingForm">
+            <link rel="stylesheet" type="text/css" href="stylesp.css">
+            <label for="guestName">Guest Name:</label>
+            <input type="text" id="guestName" required name="name">
 
-                        <label for="email">Email Address:</label>
-                        <input type="email" id="email" required name="email">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" required name="email">
 
-                        <label for="phone">Phone Number:</label>
-                        <input type="tel" id="phone" required name="phone">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required name="phone">
 
-                        <label for="numGuests">Number of Guests:</label>
-                        <input type="number" id="numGuests" min="1" required>
+            <label for="numGuests">Number of Guests:</label>
+            <input type="number" id="numGuests" min="1" required>
 
-                        <label for="suite">Select Suite:</label>
-                        <select id="suite" required>
-                            <option value="" disabled selected>Standard Suite ₦20000</option>
-                            <option value="Standard Suites">Standard Suite</option>
-                            <option value="Royal Suites">Royal Suite</option>
-                            <option value="Executive Suites">Executive Suite</option>
-                            <option value="Mini Suites">Mini Suite</option>
-                            <option value="Double room">Double room</option>
-                            <option value="Double Deluxe Suite">Double Deluxe Suite</option>
-                            <option value="Business Suites: hall without A.C">Business Suite e.g Hall Events without Air Conditioner ₦300,000 (max 4hrs) extra (₦60,000) per hour</option>
-                            <option value="Business Suites: hall with A.C">Business Suite e.g Hall Events with Air Conditioner ₦550,000 (max 4hrs) extra (₦80,000) per hour</option>
-                        </select>
+            <label for="suite">Select Suite:</label>
+            <select id="suite" required>
+                <option value="" disabled selected>Standard Suite ₦20000</option>
+                <option value="Standard Suites">Standard Suite</option>
+                <option value="Royal Suites">Royal Suite</option>
+                <option value="Executive Suites">Executive Suite</option>
+                <option value="Mini Suites">Mini Suite</option>
+                <option value="Double room">Double room</option>
+                <option value="Double Deluxe Suite">Double Deluxe Suite</option>
+                <option value="Business Suites: hall without A.C">Business Suite e.g Hall Events without Air Conditioner ₦300,000 (max 4hrs) extra (₦60,000) per hour</option>
+                <option value="Business Suites: hall with A.C">Business Suite e.g Hall Events with Air Conditioner ₦550,000 (max 4hrs) extra (₦80,000) per hour</option>
+            </select>
 
-                        <label for="checkin">Check-in Date:</label>
-                        <input type="date" id="checkin" required>
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" required>
 
-                        <label for="checkinTime">Check-in Time:</label>
-                        <input type="time" id="checkinTime" required>
+            <label for="checkinTime">Check-in Time:</label>
+            <input type="time" id="checkinTime" required>
 
-                        <label for="checkout">Check-out Date:</label>
-                        <input type="date" id="checkout" required>
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" required>
 
-                        <label for="message">Special Request</label>
-                        <textarea placeholder="Special Request (optional)" id="message" style="height: 100px"></textarea>
+            <label for="message">Special Request</label>
+            <textarea placeholder="Special Request (optional)" id="message" style="height: 100px"></textarea>
 
-                        <button class="a" type="submit">Book Now</button>
-                    </form>
-                    <div id="loader" class="loader" style="display: none;"></div>
+            <div class="dropdown">
+                <button class="dropbtn">Select The Type of Booking</button>
+                <div class="dropdown-content">
+                    <button type="submit" style="color:black; background-color:transparent; border:none;">Continue Booking</button>
+                    <a href="https://sandbox-flw-web-v3.herokuapp.com/pay/j9qj3i3eegg3">Payment Booking</a>
                 </div>
             </div>
+        </form>
+        <div id="loader" class="loader" style="display: none;"></div>
+    </div>
+</div>
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="scriptp.js"></script>
+
 
             <div class="col-lg-6 flex-item" align="center" style="font-size:18px;">
                 <h2 style="color:#FEA116;">TARIFFS</h2>
@@ -314,25 +274,25 @@ function toggleDropdown(button) {
         <th>Extra Hours (₦)</th>
     </tr>
     <tr>
-        <td>Medium Hall with A.C</td>
+        <td>Medium Hall</td>
         <td>150,000</td>
         <td>4 hrs</td>
         <td>40,000</td>
     </tr>
     <tr>
-        <td>Conference Hall with A.C</td>
+        <td>Conference Hall</td>
         <td>550,000</td>
         <td>4 hrs</td>
         <td>80,000</td>
     </tr>
     <tr>
-        <td>Medium Hall without A.C</td>
+        <td>Medium Hall</td>
         <td>100,000</td>
         <td>4 hrs</td>
         <td>30,000</td>
     </tr>
     <tr>
-        <td>Conference Hall without A.C</td>
+        <td>Conference Hall</td>
         <td>300,000</td>
         <td>4 hrs</td>
         <td>60,000</td>
@@ -361,6 +321,19 @@ function toggleDropdown(button) {
         <!-- Booking End -->
 
 
+          
+        <div class="row">
+            <div align="center">
+            <h6 class="mb-5">NOTE:<span class="text-primary text-uppercase">Upload reciept after payment for verification purposes</span></h6>
+         
+            <div class="dropdown">
+                <button class="" style="background-color:#FEA116; width:auto; border: none; padding:10px; border-radius:4px; color:white;">VERIFY NOW</button>
+                <div class="dropdown-content">
+                    <a href="https://wa.me/2348037204293">Whatsapp</a>
+                    <a href="mailto:yinkaokuneye@gmail.com">Email</a>
+                </div>
+            </div>
+          </div>
         <!-- Room Start -->
         <div class="container-xxl py-5" id="b">
             <div class="container">
