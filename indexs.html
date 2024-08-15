@@ -2,6 +2,7 @@
 
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -416,6 +417,221 @@
         </div>
         <!-- About End -->
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        
+        .product-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            background-color: white; /* White background for product items */
+        }
+        .product-item:hover {
+            transform: scale(1.05);
+        }
+        .carousel-items img {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+
+
+<div class="container mt-5">
+    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h2 class="section-title text-center text-primary text-uppercase">Our Products</h2>
+                    <h4 style="font-size:15px;" class="mb-5">Discover Peak-Olam Ltd,<span class="text-primary text">where we offer a curated selection of high-quality products designed to enhance your lifestyle. From ergonomic office furniture and stylish school essentials to refreshing beverages and cutting-edge tech accessories, our diverse range caters to every need. Experience unbeatable comfort and functionality with our premium offerings, all crafted to provide exceptional value and satisfaction. Shop with us today and elevate your everyday experience!</span></h4>
+                </div>
+    <div id="productCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-item p-3">
+                            <div class="position-relative" align="center">
+                                <img class="img-fluid" src="img/phones.jpeg" alt="Phone Accessory">
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">₦65,000, ₦75,000,₦ 35,000 e.t.c</small>
+                            </div>
+                            <h5 class="mt-2">Mobile Phones</h5>
+                            <p class="text-body">High-quality phones (Samsung, Itel, Infinix e.t.c) with long life batteries, easy to use functionality at the best rates.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary" href="#">View Detail</a>
+                                <a href="javascript:void(0)" onclick="payWithPaystack('Phone Accessory', 65000, 'yinkamojoyin@gmail.com')" class="btn btn-sm btn-dark">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-item p-3">
+                            <div class="position-relative" align="center">
+                                <img class="img-fluid" src="img/office.jpeg" alt="Office Chair">
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">₦60,000</small>
+                            </div>
+                            <h5 class="mt-2">Office Chair</h5>
+                            <p class="text-body">Ergonomic office chairs designed for comfort and productivity.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary" href="#">View Detail</a>
+                                <a href="javascript:void(0)" onclick="payWithPaystack('Office Chair', 60000, 'yinkamojoyin@gmail.com')" class="btn btn-sm btn-dark">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-item p-3">
+                            <div class="position-relative" align="center">
+                                <img class="img-fluid" src="img/sch chairs.jpeg" alt="School Table">
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">₦35,000</small>
+                            </div>
+                            <h5 class="mt-2">School Table</h5>
+                            <p class="text-body">Sturdy and durable tables for school use.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary" href="#">View Detail</a>
+                                <a href="javascript:void(0)" onclick="payWithPaystack('School Table', 35000, 'yinkamojoyin@gmail.com')" class="btn btn-sm btn-dark">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-item p-3">
+                            <div class="position-relative" align="center">
+                                <img class="img-fluid" src="img/drinks.jpeg" alt="Drink">
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">₦500,₦1,200,₦1,400 e.t.c</small>
+                            </div>
+                            <h5 class="mt-2">Drink</h5>
+                            <p class="text-body">Refreshing drinks to quench your thirst.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary" href="#">View Detail</a>
+                                <a href="javascript:void(0)" onclick="payWithPaystack('Drink', 1000, 'yinkamojoyin@gmail.com')" class="btn btn-sm btn-dark">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-item p-3">
+                            <div class="position-relative" align="center">
+                                <img class="img-fluid" src="img/clothes.jpeg" alt="Laptop">
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">₦15,000</small>
+                            </div>
+                            <h5 class="mt-2">Clothes and Native wears</h5>
+                            <p class="text-body">Get nice and wonderful native wears from our store now at the best rates!!</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary" href="#">View Detail</a>
+                                <a href="javascript:void(0)" onclick="payWithPaystack('Clothes and Native Wears', 25000, 'yinkamojoyin@gmail.com')" class="btn btn-sm btn-dark">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-item p-3">
+                            <div class="position-relative" align="center">
+                                <img class="img-fluid" src="img/acc.jpeg" alt="Gaming Chair">
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">₦30,000</small>
+                            </div>
+                            <h5 class="mt-2">Phone Accessories</h5>
+                            <p class="text-body">Comfortable and easy to carry along accessories at the best rates.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary" href="#">View Detail</a>
+                                <a href="javascript:void(0)" onclick="payWithPaystack('Phone Accessory', 10000, 'yinkamojoyin@gmail.com')" class="btn btn-sm btn-dark">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-item p-3">
+                            <div class="position-relative" align="center">
+                                <img class="img-fluid" src="img/clothe.jpeg" alt="School Backpack">
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">₦18,500</small>
+                            </div>
+                            <h5 class="mt-2">clothes</h5>
+                            <p class="text-body">Buy at the best rates.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary" href="#">View Detail</a>
+                                <a href="javascript:void(0)" onclick="payWithPaystack('clothes', 18500, 'yinkamojoyin@gmail.com')" class="btn btn-sm btn-dark">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-item p-3">
+                            <div class="position-relative" align="center">
+                                <img class="img-fluid" src="img/office.jpeg" alt="Office Desk">
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">₦25,000</small>
+                            </div>
+                            <h5 class="mt-2">Office Desk</h5>
+                            <p class="text-body">Stylish and functional desks for your workspace.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary" href="#">View Detail</a>
+                                <a href="javascript:void(0)" onclick="payWithPaystack('Office Desk', 25000, 'yinkamojoyin@gmail.com')" class="btn btn-sm btn-dark">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-item p-3">
+                            <div class="position-relative" align="center">
+                                <img class="img-fluid" src="img/drink.jpeg" alt="Energy Drink">
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">₦1,500, ₦2500, ₦3500 e.t.c</small>
+                            </div>
+                            <h5 class="mt-2">Energy Drink</h5>
+                            <p class="text-body">Boost your energy with our refreshing drinks.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary" href="#">View Detail</a>
+                                <a href="javascript:void(0)" onclick="payWithPaystack('Energy Drink', 1500, 'yinkamojoyin@gmail.com')" class="btn btn-sm btn-dark">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://js.paystack.co/v1/inline.js"></script>
+<script>
+function payWithPaystack(product, amount, beneficiaryEmail) {
+    var handler = PaystackPop.setup({
+        key: 'pk_test_a8730cb41f4820e01b9c2cdfba097714667ee2ea', // Replace with your Paystack public key
+        email: beneficiaryEmail, // Use the beneficiary's email
+        amount: amount * 100, // Amount in Kobo
+        currency: "NGN", // Use NGN for Naira or USD for dollars
+        ref: '' + Math.floor((Math.random() * 1000000000) + 1), // Generate a random reference
+        metadata: {
+            custom_fields: [
+                {
+                    display_name: "Product",
+                    variable_name: "product",
+                    value: product
+                },
+                {
+                    display_name: "Beneficiary Email",
+                    variable_name: "beneficiary_email",
+                    value: beneficiaryEmail
+                }
+            ]
+        },
+        callback: function(response) {
+            alert('Payment successful. Transaction ref is ' + response.reference);
+            // Handle successful transaction response here
+        },
+        onClose: function() {
+            alert('Payment cancelled');
+        }
+    });
+    handler.openIframe();
+}
+</script>
 
         <!-- Room Start -->
         <div class="container-xxl py-5" id="b">
@@ -821,13 +1037,7 @@ function payWithPaystack(product, amount, beneficiaryEmail) {
             <img src="https://funaab.edu.ng/wp-content/uploads/2022/02/zoo-park.jpg" alt="FUNAAB Zoo">
             <div class="carousel-description">
                 <h2>FUNAAB Zoo</h2>
-                <p>Experience the wildlife at FUNAAB Zoo, just a short distance from Peakolam Suites with a 12min (3.9km) drive along FUNAAB road opposite 4tans hostel. A perfect family outing! with a price of #2000 per person.</p>
-                <button class="toggle-description" onclick="toggleDropdown(this)">More Info</button>
-                <div class="dropdown-content">
-                    <p>FUNAAB Zoo is home to various species of animals and offers educational programs for visitors.FUNAAB Zoo PARK is a natural, fauna and flora conservation facility, a tourist attraction centre of the Federal University of Agriculture, Abeokuta. It is located on a 62 hectare piece of land within the 10,000 hectares of the University, in a derived savannah zone constituting a place of Natural Hospitality. FUNAAB Zoo Park is a significant site for Education, Research, Conservation, Captive breeding of wild animals as well as relaxation tourist attraction centre. It is also a place for Conferences, Meetings, Receptions, Cocktails, etc, in a serene natural environment. The Park serves as a field laboratory for Industrial Training students of Zoology, Botany, Forestry and Wildlife Management, Hospitality and Tourism Management, Veterinary Medical students, pupils of primary, secondary and tertiary institutions and an educational centre for the general public. It is a place of delight for various categories of tourists from all parts of the world.
-
-</p>
-                </div>
+                <p>Experience the wildlife at FUNAAB Zoo, just a short distance from Peakolam Suites with a 12min (3.9km) drive along FUNAAB road opposite 4tans hostel. A perfect family outing! with a price of #2000 per person. It is also a place for Conferences, Meetings, Receptions, Cocktails, etc, in a serene natural environment. The Park serves as a field laboratory for Industrial Training students of Zoology, Botany, Forestry and Wildlife Management, Hospitality and Tourism Management, Veterinary Medical students, pupils of primary, secondary and tertiary institutions and an educational centre for the general public. It is a place of delight for various categories of tourists from all parts of the world.</p>
                
                   <a href="https://funaab.edu.ng/section/funaab-zoo-park/" target="_blank" class="button" >Visit Zoo</a>
                   <a href="https://maps.app.goo.gl/5YPymaAU8cEqKmRaA" target="_blank" class="button">Locate Zoo</a>
@@ -840,11 +1050,7 @@ function payWithPaystack(product, amount, beneficiaryEmail) {
             <iframe width="100%" height="360" src="https://www.youtube.com/embed/-dfMRuBoFA0?si=xMEKIdZ--KNhJyJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <div class="carousel-description">
                 <h2>ABOUT ABEOKUTA</h2>
-                <p>Abeokuta is the capital city of Ogun State in southwest Nigeria. It is situated on the east bank of the Ogun River, near a group of rocky outcrops in a wooded savanna; 77 kilometres north of Lagos by railway, or 130 kilometres by water. As of 2006, Abeokuta and the surrounding area had a population of 449,088. Wikipedia</p>
-                <button class="toggle-description" onclick="toggleDropdown(this)">More Info</button>
-                <div class="dropdown-content">
-                    <p>An account suggests that the early Abeokuta settlements were established by Yoruba migrants from various places within Yoruba land. According to The History of the Yorubas by Samuel Johnson, Eso Ikoyi chiefs in the retinue of the first Alake of the Egba joined him in founding a new community - the confederacy of towns that became known as Orile Egba - in the forest after they left the nascent Oyo empire in around the 13th century AD.[12] Orile Egba continued to exist until its destruction during the Yoruba Civil Wars of the 19th century. As a result, many of the leading families of the Egba claim descent from the Eso Ikoyis today.</p>
-                </div>
+                <p>Abeokuta is the capital city of Ogun State in southwest Nigeria. It is situated on the east bank of the Ogun River, near a group of rocky outcrops in a wooded savanna; 77 kilometres north of Lagos by railway, or 130 kilometres by water. As of 2006, Abeokuta and the surrounding area had a population of 449,088. Wikipedia.An account suggests that the early Abeokuta settlements were established by Yoruba migrants from various places within Yoruba land. According to The History of the Yorubas by Samuel Johnson, Eso Ikoyi chiefs in the retinue of the first Alake of the Egba joined him in founding a new community - the confederacy of towns that became known as Orile Egba - in the forest after they left the nascent Oyo empire in around the 13th century AD.[12] Orile Egba continued to exist until its destruction during the Yoruba Civil Wars of the 19th century. As a result, many of the leading families of the Egba claim descent from the Eso Ikoyis today.</p>
                 <a href="https://en.wikipedia.org/wiki/Abeokuta" class="button">Discover More</a>
             </div>
         </div>
@@ -856,15 +1062,7 @@ function payWithPaystack(product, amount, beneficiaryEmail) {
                 <p>Professor Woke Soyinka Station is located at Laderin, Abeokuta.
 It is one of the train stations within the Western District of the Nigerian Railway Corporation. It currently operates within the Lagos to Ibadan Train services (LITS).
 The station is always neat and the staffs are professional.
-You can board a train going to either Lagos or Ibadan.</p>
-                <button class="toggle-description" onclick="toggleDropdown(this)">More Info</button>
-                <div class="dropdown-content">
-                    <strong><h2>About Professor Wole Soyinka</h2></strong>
-              <p>Soyinka was born into a Yoruba family in Abeokuta, Nigeria.[5] In 1954, he attended Government College in Ibadan,[6] and subsequently University College Ibadan and the University of Leeds in England.[7] After studying in Nigeria and the UK, he worked with the Royal Court Theatre in London. He went on to write plays that were produced in both countries, in theatres and on radio. He took an active role in Nigeria's political history and its campaign for independence from British colonial rule. In 1965, he seized the Western Nigeria Broadcasting Service studio and broadcast a demand for the cancellation of the Western Nigeria Regional Elections.[8][9] In 1967, during the Nigerian Civil War, he was arrested by the federal government of General Yakubu Gowon and put in solitary confinement for two years, for volunteering to be a non-government mediating actor.[10]</p>
-
-
-              <strong><h2>About The Ogun State Railway</h2></strong>
-              <p>The first railway line was constructed from Lagos to Abeokuta in 1890s! which was later extended to Ibadan in the coming years.
+You can board a train going to either Lagos or Ibadan.The first railway line was constructed from Lagos to Abeokuta in 1890s! which was later extended to Ibadan in the coming years.
 This picture is relics of the railway line which terminated at now Panseke area. In the Colonial era, railway stations are usually opposite Post office, Panseke Post office gives it away- for Railway station was located there.
 The above bridge is the popular Gada 'Bridge' Aro, which became disused after the Station was moved to Lafenwa.
 The present day Domino's plaza/Former Diamond Bank/ UAC complex were warehouse for the old railway stations.
@@ -873,8 +1071,6 @@ Former Mr Biggs, Mama Cass now PP bakery were all warehouse for the old Railway 
 It was learnt that the Station was moved to Lafenwa which allowed expansion to Ibadan and later to Kano.
 It's of note for Residents of Abeokuta to know that the Old Abeokuta Railway Station was moved from Panseke/Ibara to Present day Lafenwa. 
 Check other Southwest states Capital cities  with Rail Stations, there is usually an economic hub, reason why Oke ilewo is Abeokuta's 'Broad Street', Dugbe in Ibadan, Station Road at Osogbo, Postoffice/Challenge in Ilorin etc.In All, the above picture lead to the Former Railway station at Panseke which was constructed over 100years ago.</p>
-<center><img src="https://scontent.flos1-2.fna.fbcdn.net/v/t39.30808-6/232275253_1189530144880292_945144656754702617_n.jpg?stp=dst-jpg_s640x640&_nc_cat=100&ccb=1-7&_nc_sid=3a1ebe&_nc_ohc=6qrA84Q65lsQ7kNvgGhEyC-&_nc_zt=23&_nc_ht=scontent.flos1-2.fna&gid=AGgnOaFwNXKajCJutKHVWaM&oh=00_AYCwQ0gvOQdshQ47HhJAPuRnK6VXt8wmDZ8ClTm1YcmNXQ&oe=66AD8F42"></center>
-                </div>
                 <a href="https://www.tripadvisor.com/Attraction_Review-g1760497-d23961668-Reviews-Professor_Wole_Soyinka_Train_Station-Abeokuta_Ogun_State.html" class="button">Learn More</a>
                 <a href="https://maps.app.goo.gl/kTXftXyPGePxDQxN6" class="button">Location</a>
             </div>
