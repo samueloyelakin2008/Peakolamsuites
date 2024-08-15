@@ -450,7 +450,7 @@
                                 <p class="text-body mb-3"></p>
                                 <div class="d-flex justify-content-between">
                                     <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
-                                    <a href="javascript:void(0)" onclick="payWithPaystack('Royal Suite', 40000)" class="btn btn-sm btn-dark rounded py-2 px-4">Book Now</a>
+                                    <a href="javascript:void(0)" onclick="payWithPaystack('Royal Suite', 40000, 'yinkamojoyin@gmail.com')" class="btn btn-sm btn-dark rounded py-2 px-4">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -510,7 +510,7 @@
                                 <p class="text-body mb-3"></p>
                                 <div class="d-flex justify-content-between">
                                     <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
-                                  <a href="javascript:void(0)" onclick="payWithPaystack('Standard Suite', 20000)" class="btn btn-sm btn-dark rounded py-2 px-4">Book Now</a>
+                                  <a href="javascript:void(0)" onclick="payWithPaystack('Standard Suite', 20000, 'yinkamojoyin@gmail.com')" class="btn btn-sm btn-dark rounded py-2 px-4">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -570,7 +570,7 @@
                                 <p class="text-body mb-3"></p>
                                 <div class="d-flex justify-content-between">
                                     <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
-                                  <a href="javascript:void(0)" onclick="payWithPaystack('Mini Suite', 30000)" class="btn btn-sm btn-dark rounded py-2 px-4">Book Now</a>
+                                  <a href="javascript:void(0)" onclick="payWithPaystack('Mini Suite', 30000,'yinkamojoyin@gmail.com')" class="btn btn-sm btn-dark rounded py-2 px-4">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -600,7 +600,7 @@
                                 <p class="text-body mb-3"></p>
                                 <div class="d-flex justify-content-between">
                                     <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
-                                  <a href="javascript:void(0)" onclick="payWithPaystack('Double Room', 24000)" class="btn btn-sm btn-dark rounded py-2 px-4">Book Now</a>
+                                  <a href="javascript:void(0)" onclick="payWithPaystack('Double Room', 24000, 'yinkamojoyin@gmail.com')" class="btn btn-sm btn-dark rounded py-2 px-4">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -611,10 +611,10 @@
         <!-- Room End -->
 <script src="https://js.paystack.co/v1/inline.js"></script>
 <script>
-function payWithPaystack(product, amount) {
+function payWithPaystack(product, amount, beneficiaryEmail) {
     var handler = PaystackPop.setup({
         key: 'pk_live_c1e6bcc3f953b6aedf461269e9cf1520b9b4a588', // Replace with your Paystack public key
-        email: 'samueladeoye834@gmail.com', // Replace with the customer's email
+        email: beneficiaryEmail, // Use the beneficiary's email
         amount: amount * 100, // Amount in Kobo
         currency: "NGN", // Use NGN for Naira or USD for dollars
         ref: '' + Math.floor((Math.random() * 1000000000) + 1), // Generate a random reference
@@ -624,6 +624,11 @@ function payWithPaystack(product, amount) {
                     display_name: "Product",
                     variable_name: "product",
                     value: product
+                },
+                {
+                    display_name: "Beneficiary Email",
+                    variable_name: "beneficiary_email",
+                    value: beneficiaryEmail
                 }
             ]
         },
