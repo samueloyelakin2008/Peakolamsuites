@@ -328,9 +328,19 @@
 </div>
 
 <!-- Popup message container -->
+      <div class="col-lg-6 d-flex justify-content-center align-items-center" style="height: 100%;">
+                <div class="gif-container" id="gifContainer" style="display: none; text-align: center;">
+                    <img id="gifImage" src="" alt="Status GIF" style="max-width: 100%; height: auto;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Popup message container -->
 <div id="popupContainer" class="popup-container" style="display: none;">
     <div class="popup-content">
-        <div class="close-button" id="closebutton">&times;</div>
+        <span class="close-button" id="closeButton">&times;</span>
         <div id="popupMessage"></div>
         <div id="popupGif" class="popup-gif">
             <img id="popupGifImage" src="" alt="Status GIF" style="max-width: 100%; height: auto;">
@@ -345,7 +355,7 @@
             <h6 class="mb-5">NOTE:<span class="text-primary text-uppercase">Upload reciept after payment for verification purposes with your booking details</span></h6>
          
             <div class="dropdown">
-                <button class="" style="background-color:#FEA116; width:auto; border: none; padding:10px; border-radius:4px; color:white;">VERIFY NOW</button>
+                <button class="" style="background-color:#FEA116; width:auto; border: none; padding:10px; border-radius:4px; color:white; margin-bottom:30px;">VERIFY NOW</button>
                 <div class="dropdown-content">
                     <a href="https://wa.me/2348037204293">Whatsapp</a>
                     <a href="mailto:yinkamojoyin@gmail.com">Email</a>
@@ -353,14 +363,6 @@
             </div>
           </div>
         <!-- About Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-6">
-                        <h6 class="section-title text-start text-primary text-uppercase">About Us</h6>
-                        <h2 class="mb-4">Welcome to <span class="text-primary text-uppercase">PeakOlam Suites Hotel</span></h2>
-                        <p class="mb-4">Peakolam Suites was built to provide accomodation in a serene environment to lodgers all over the world Our intention is to make lodgers comfortable and feel at home in our cosy rooms</p>
-                        <div class="row g-3 pb-4">
                             <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
                                 <div class="border rounded p-1">
                                     <div class="border rounded text-center p-4">
@@ -389,7 +391,6 @@
                                 </div>
                             </div>
                         </div>
-                        <a class="btn btn-primary py-3 px-5 mt-2" href="">Explore More</a>
                     </div>
                     <div class="col-lg-6">
                         <div class="row g-3">
@@ -905,45 +906,7 @@ function payWithPaystack(product, amount, beneficiaryEmail) {
 }
 </script>
         <!-- Video Start -->
-        <div class="container-xxl py-5 px-0 wow zoomIn" data-wow-delay="0.1s">
-            <div class="row g-0">
-                <div class="col-md-6 bg-dark d-flex align-items-center">
-                    <div class="p-5">
-                        <h6 class="section-title text-start text-white text-uppercase mb-3">Luxury Living</h6>
-                        <h1 class="text-white mb-4">Discover A Brand Luxurious Hotel</h1>
-                        <p class="text-white mb-4">PEAKOLAM SUITES WAS BUILT TO PROVIDE ACCOMODATION IN A SERENE ENVIRONMENT TO LODGERS ALL OVER THE WORLD</p>
-                        <a href="room.html" class="btn btn-primary py-md-3 px-md-5 me-3">Our Rooms</a>
-                        <a href="booking.html" class="btn btn-light py-md-3 px-md-5">Book A Room</a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="video">
-
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/GKT0gdC-1is" title="peak olam suites" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                          
-              <span></span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content rounded-0">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- 16:9 aspect ratio -->
-                        <div class="ratio ratio-16x9">
-                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
-                                allow="autoplay"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <!-- Video ends -->
 
 
@@ -1066,8 +1029,118 @@ function payWithPaystack(product, amount, beneficiaryEmail) {
             </div>
         </div>
         <!-- Testimonial End -->
+<style>
+.popup-banner {
+    display: none; /* Initially hidden */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
 
+.popup-banner-content {
+    background-color: #fefefe;
+    position: absolute; /* Change to absolute positioning */
+    top: 50%; /* Position from the top */
+    left: 50%; /* Position from the left */
+    transform: translate(-50%, -50%); /* Center the element */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
 
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup-banner-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.popup-banner-title {
+    color: #333;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.popup-banner-text {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.popup-banner-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.popup-banner-button:hover {
+    background-color: #0056b3;
+}
+</style>
+
+<script>
+let popupInterval;
+
+window.onload = function() {
+    // Start showing the popup every 15 seconds
+    popupInterval = setInterval(showPopupBanner, 15000); // 15000 milliseconds = 15 seconds
+};
+
+function showPopupBanner() {
+    // Check if the popup is already visible
+    if (document.getElementById("popup-banner").style.display !== "block") {
+        var popupBanner = document.getElementById("popup-banner");
+        popupBanner.style.display = "block";
+    }
+}
+
+function closePopupBanner() {
+    var popupBanner = document.getElementById("popup-banner");
+    popupBanner.style.display = "none";
+}
+
+// Optional: Stop showing the popup after it has been closed
+document.querySelector('.close-button').addEventListener('click', function() {
+    clearInterval(popupInterval); // Stop the interval when the popup is closed
+});
+</script>
+
+<div id="popup-banner" class="popup-banner">
+    <div class="popup-banner-content">
+        <span class="close-button" onclick="closePopupBanner()">&times;</span>
+        <img src="https://appstechno.in/wp-content/uploads/2023/08/website.gif" alt="Visit our website" class="popup-banner-image">
+        <h3 class="popup-banner-title">Visit our website for more!</h3>
+        <p class="popup-banner-text">Discover our full range of products and services on our website.</p>
+        <a href="https://www.example.com" class="popup-banner-button">Visit Website</a>
+    </div>
+</div>
         <!-- Team Start -->
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                     <h6 class="section-title text-center text-primary text-uppercase">ABOUT ABEOKUTA</h6>
