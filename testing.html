@@ -1030,6 +1030,7 @@ function payWithPaystack(product, amount, beneficiaryEmail) {
         </div>
         <!-- Testimonial End -->
 <style>
+<style>
 .popup-banner {
     display: none; /* Initially hidden */
     position: fixed;
@@ -1050,7 +1051,7 @@ function payWithPaystack(product, amount, beneficiaryEmail) {
     transform: translate(-50%, -50%); /* Center the element */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 90%; /* Changed to 90% for better responsiveness */
     max-width: 600px;
     text-align: center;
     border-radius: 10px;
@@ -1103,6 +1104,23 @@ function payWithPaystack(product, amount, beneficiaryEmail) {
 .popup-banner-button:hover {
     background-color: #0056b3;
 }
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .popup-banner-title {
+        font-size: 20px; /* Smaller title on smaller screens */
+    }
+    
+    .popup-banner-text {
+        font-size: 14px; /* Smaller text on smaller screens */
+    }
+    
+    .popup-banner-button {
+        padding: 8px 16px; /* Adjust button padding */
+        font-size: 14px; /* Smaller button font size */
+    }
+}
+</style>
 </style>
 
 <script>
