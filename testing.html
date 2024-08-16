@@ -647,37 +647,57 @@
 <script src="https://js.paystack.co/v1/inline.js"></script>
 <script>
 function payWithPaystacks(product, amount, beneficiaryEmail) {
-    var handler = PaystackPop.setup({
-        key: 'pk_test_a8730cb41f4820e01b9c2cdfba097714667ee2ea', // Replace with your Paystack public key
-        email: beneficiaryEmail, // Use the beneficiary's email
-        amount: amount * 100, // Amount in Kobo
-        currency: "NGN", // Use NGN for Naira or USD for dollars
-        ref: '' + Math.floor((Math.random() * 1000000000) + 1), // Generate a random reference
-        metadata: {
-            custom_fields: [
-                {
-                    display_name: "Product",
-                    variable_name: "product",
-                    value: product
-                },
-                {
-                    display_name: "Beneficiary Email",
-                    variable_name: "beneficiary_email",
-                    value: beneficiaryEmail
-                }
-            ]
-        },
-        callback: function(response) {
-            alert('Payment successful. Transaction ref is ' + response.reference);
-            // Handle successful transaction response here
-        },
-        onClose: function() {
-            alert('Payment cancelled');
-        }
-    });
-    handler.openIframe();
+    // Get the button that was clicked
+    const button = event.target; 
+    // Disable the button to prevent multiple clicks
+    button.disabled = true; 
+
+    // Create a stylish popup message container
+    const popup = document.createElement('div');
+    popup.className = 'popup-message';
+    popup.innerText = 'Payment unavailable still in progress...';
+    document.body.appendChild(popup);
+
+    // Simulate payment process without opening the Paystack gateway
+    setTimeout(() => {
+        // Here you can implement any logic you want to execute after the timeout
+        alert('Payment process simulated. No actual payment was made.');
+        
+        // Reset button state
+        button.disabled = false; 
+
+        // Remove the popup message
+        document.body.removeChild(popup);
+    }, 3000); // Simulate a 3-second delay for the payment process
 }
+setTimeout(() => {
+    popup.classList.add('fade-out'); // Add fade-out class
+    setTimeout(() => {
+        document.body.removeChild(popup); // Remove after fade-out
+    }, 500); // Wait for fade-out duration
+}, 3000); // Keep the message for 3 seconds
 </script>
+<style>
+    .popup-message {
+    position: fixed;
+    right: 20px; /* Position from the right */
+    top: 20px; /* Position from the top */
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    padding: 15px 25px; /* Padding around the text */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    z-index: 1000; /* Ensure it appears above other elements */
+    transition: opacity 0.5s ease; /* Fade effect */
+    opacity: 1; /* Fully visible */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+}
+
+.popup-message.fade-out {
+    opacity: 0; /* Fade out effect */
+}
+</style>
 
         <!-- Room Start -->
         <div class="container-xxl py-5" id="b">
