@@ -245,7 +245,7 @@
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                     <h6 class="section-title text-center text-primary text-uppercase">Our Rooms</h6>
-                    <h1 class="mb-5">Explore Our <span class="text-primary text">Rooms</span></h1>
+                    <h1 class="mb-5">Explore Our <span class="text-primary text">Rooms and Tarrifs</span></h1>
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -256,7 +256,7 @@
                             </div>
                             <div class="p-4 mt-2">
                                 <div class="d-flex justify-content-between mb-3">
-                                    <h5 class="mb-0">Executive Suite</h5>
+                                    <h5 class="mb-0">Royal Suite</h5>
                                     <div class="ps-2">
                                         <small class="fa fa-star text-primary"></small>
                                         <small class="fa fa-star text-primary"></small>
@@ -273,7 +273,7 @@
                                 <p class="text-body mb-3"></p>
                                 <div class="d-flex justify-content-between">
                                     <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
-                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="#a">Book Now</a>
+                                    <a href="javascript:void(0)" onclick="payWithPaystack('Royal Suite', 40000, 'yinkamojoyin@gmail.com')" class="btn btn-sm btn-dark rounded py-2 px-4">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -303,7 +303,7 @@
                                 <p class="text-body mb-3"></p>
                                 <div class="d-flex justify-content-between">
                                     <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
-                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="#a">Book Now</a>
+                                    <a href="javascript:void(0)" onclick="payWithPaystacks('Deluxe Suite', 45000, 'yinkamojoyin@gmail.com')" class="btn btn-sm btn-dark rounded py-2 px-4">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -333,7 +333,7 @@
                                 <p class="text-body mb-3"></p>
                                 <div class="d-flex justify-content-between">
                                     <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
-                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="#a">Book Now</a>
+                                  <a href="javascript:void(0)" onclick="payWithPaystack('Standard Suite', 20000, 'yinkamojoyin@gmail.com')" class="btn btn-sm btn-dark rounded py-2 px-4">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -363,7 +363,7 @@
                                 <p class="text-body mb-3"></p>
                                 <div class="d-flex justify-content-between">
                                     <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
-                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="#a">Book Now</a>
+                                    <a href="javascript:void(0)" onclick="payWithPaystacks('Super Deluxe', 50000, 'yinkamojoyin@gmail.com')" class="btn btn-sm btn-dark rounded py-2 px-4">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -393,7 +393,7 @@
                                 <p class="text-body mb-3"></p>
                                 <div class="d-flex justify-content-between">
                                     <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
-                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="#a">Book Now</a>
+                                  <a href="javascript:void(0)" onclick="payWithPaystack('Mini Suite', 30000,'yinkamojoyin@gmail.com')" class="btn btn-sm btn-dark rounded py-2 px-4">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -402,11 +402,11 @@
                         <div class="room-item shadow rounded overflow-hidden">
                             <div class="position-relative" align="center">
                                 <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyoDfw5qze-sNCQRoT5ou_UeyC2dPr9dqGyQ&s" alt="">
-                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">₦45000/Night</small>
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">₦24000/Night</small>
                             </div>
                             <div class="p-4 mt-2">
                                 <div class="d-flex justify-content-between mb-3">
-                                    <h5 class="mb-0">Double Deluxe Suite</h5>
+                                    <h5 class="mb-0">Double room</h5>
                                     <div class="ps-2">
                                         <small class="fa fa-star text-primary"></small>
                                         <small class="fa fa-star text-primary"></small>
@@ -423,7 +423,7 @@
                                 <p class="text-body mb-3"></p>
                                 <div class="d-flex justify-content-between">
                                     <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
-                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="#a">Book Now</a>
+                                  <a href="javascript:void(0)" onclick="payWithPaystack('Double Room', 24000, 'yinkamojoyin@gmail.com')" class="btn btn-sm btn-dark rounded py-2 px-4">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -432,8 +432,63 @@
             </div>
         </div>
         <!-- Room End -->
+<script src="https://js.paystack.co/v1/inline.js"></script>
+<script src="payment.js"></script>
+        <!-- Room End -->
 
+<script>
+function payWithPaystacks(product, amount, beneficiaryEmail) {
+    // Get the button that was clicked
+    const button = event.target; 
+    // Disable the button to prevent multiple clicks
+    button.disabled = true; 
 
+    // Create a stylish popup message container
+    const popup = document.createElement('div');
+    popup.className = 'popup-message';
+    popup.innerText = 'Payment unavailable. For Payment message/call us via Whatsapp Thanks.';
+    document.body.appendChild(popup);
+
+    // Simulate payment process without opening the Paystack gateway
+    setTimeout(() => {
+        // Here you can implement any logic you want to execute after the timeout
+        alert('Payment process simulated. No actual payment was made.');
+        
+        // Reset button state
+        button.disabled = false; 
+
+        // Remove the popup message
+        document.body.removeChild(popup);
+    }, 3000); // Simulate a 3-second delay for the payment process
+}
+setTimeout(() => {
+    popup.classList.add('fade-out'); // Add fade-out class
+    setTimeout(() => {
+        document.body.removeChild(popup); // Remove after fade-out
+    }, 500); // Wait for fade-out duration
+}, 3000); // Keep the message for 3 seconds
+</script>
+<style>
+    .popup-message {
+    position: fixed;
+    right: 20px; /* Position from the right */
+    top: 20px; /* Position from the top */
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    padding: 15px 25px; /* Padding around the text */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    z-index: 1000; /* Ensure it appears above other elements */
+    transition: opacity 0.5s ease; /* Fade effect */
+    opacity: 1; /* Fully visible */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+}
+
+.popup-message.fade-out {
+    opacity: 0; /* Fade out effect */
+}
+</style>
         <!-- Testimonial Start -->
         <div class="container-xxl py-5">
             <div class="container">

@@ -432,39 +432,7 @@
         </div>
         <!-- Room End -->
 <script src="https://js.paystack.co/v1/inline.js"></script>
-<script>
-function payWithPaystack(product, amount, beneficiaryEmail) {
-    var handler = PaystackPop.setup({
-        key: 'pk_live_c1e6bcc3f953b6aedf461269e9cf1520b9b4a588', // Replace with your Paystack public key
-        email: beneficiaryEmail, // Use the beneficiary's email
-        amount: amount * 100, // Amount in Kobo
-        currency: "NGN", // Use NGN for Naira or USD for dollars
-        ref: '' + Math.floor((Math.random() * 1000000000) + 1), // Generate a random reference
-        metadata: {
-            custom_fields: [
-                {
-                    display_name: "Product",
-                    variable_name: "product",
-                    value: product
-                },
-                {
-                    display_name: "Beneficiary Email",
-                    variable_name: "beneficiary_email",
-                    value: beneficiaryEmail
-                }
-            ]
-        },
-        callback: function(response) {
-            alert('Payment successful. Transaction ref is ' + response.reference);
-            // You can also handle the successful transaction response here
-        },
-        onClose: function() {
-            alert('Payment cancelled');
-        }
-    });
-    handler.openIframe();
-}
-</script>
+<script  src="payment.js"></script>
   <div class="container-xxl py-5" align="center" id="a">
     <div class="container">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
